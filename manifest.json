@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Open New Tab in Group",
+    "version": "1.0",
+    "description": "Opens a new tab in the current tab group.",
+    "permissions": [
+      "tabs",
+      "tabGroups"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "commands": {
+      "open-new-tab-in-active-group": {
+        "suggested_key": {
+          "default": "Ctrl+Shift+L", 
+          "mac": "Command+Shift+L"
+        },
+        "description": "Open New Tab in Active Tab Group"
+      }
+    }
+  }
